@@ -8,6 +8,16 @@ alignSelf.inherit = alignSelf('inherit')
 alignSelf.initial = alignSelf('initial')
 alignSelf.stretch = alignSelf('stretch')
 
+const appearance = value => ({appearance: value})
+appearance.none = appearance('none')
+appearance.button = appearance('button')
+appearance.radio = appearance('radio')
+appearance.checkbox = appearance('checkbox')
+const mozAppearance = value => ({mozAppearance: value})
+mozAppearance.none = webkitAppearance('none')
+const webkitAppearance = value => ({webkitAppearance: value})
+webkitAppearance.none = webkitAppearance('none')
+
 const background = value => ({background: value})
 background.none = background('none')
 background.transparent = background('transparent')
@@ -132,6 +142,10 @@ whiteSpace.nowrap = whiteSpace('nowrap')
 
 module.exports = {
   alignSelf,
+  appearance,
+  mozAppearance,
+  webkitAppearance,
+
 
   background,
   backgroundClip,
