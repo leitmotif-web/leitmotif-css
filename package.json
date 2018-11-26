@@ -16,7 +16,9 @@
   },
   "dependencies": {
     "es6-promisify": "^6.0.0",
-    "npm": "^6.2.0"
+    "npm": "^6.2.0",
+    "ramda": "^0.26.0",
+    "xml-js": "^1.6.8"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
