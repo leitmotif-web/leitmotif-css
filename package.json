@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "description": "",
   "main": "",
-  "scripts": {},
+  "scripts": {
+    "lint": "eslint ./leitmotif-css.mjs"
+  },
   "private": true,
   "license": "MIT",
   "engines": {
@@ -15,18 +17,10 @@
     "url": "git+https://github.com/leitmotif-web/leitmotif-css.git"
   },
   "dependencies": {
-    "es6-promisify": "^6.0.0",
-    "npm": "^6.2.0",
     "ramda": "^0.26.0",
     "xml-js": "^1.6.8"
   },
   "devDependencies": {
-    "babel-eslint": "^7.2.3",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-es2017": "^6.24.1",
-    "babel-preset-stage-2": "^6.24.1",
-    "babel-preset-stage-3": "^6.24.1",
-    "babelify": "^7.3.0",
     "eslint": "^3.19.0",
     "nodemon": "^1.11.0"
   }
