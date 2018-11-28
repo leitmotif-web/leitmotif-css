@@ -4,7 +4,8 @@
   "description": "",
   "main": "",
   "scripts": {
-    "lint": "eslint ./leitmotif-css.mjs"
+    "lint": "eslint ./leitmotif-css.mjs",
+    "build": "node --experimental-modules ./lib/generate-from-xml.mjs"
   },
   "private": true,
   "license": "MIT",
