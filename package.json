@@ -5,7 +5,7 @@
   "main": "",
   "scripts": {
     "lint": "eslint ./leitmotif-css.mjs",
-    "build": "node --experimental-modules ./lib/generate-from-xml.mjs"
+    "postinstall": "node --experimental-modules ./lib/generate-from-xml.mjs"
   },
   "private": true,
   "license": "MIT",
@@ -21,8 +21,5 @@
     "ramda": "^0.26.0",
     "xml-js": "^1.6.8"
   },
-  "devDependencies": {
-    "eslint": "^3.19.0",
-    "nodemon": "^1.18.7"
-  }
+  "devDependencies": {}
 }
