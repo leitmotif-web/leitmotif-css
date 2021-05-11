@@ -5,15 +5,15 @@
   "main": "",
   "scripts": {
     "lint": "eslint ./leitmotif-css.mjs",
-    "test": "node --experimental-modules ./test-runner/index.mjs \"./../test/*.spec.mjs\" | tap-summary",
+    "test": "node ./test-runner/index.mjs \"./../test/*.spec.mjs\"",
     "test:watch": "nodemon --exec 'npm t'",
-    "postinstall": "node --experimental-modules ./lib/generate-from-xml.mjs"
+    "postinstall": "node ./lib/generate-from-xml.mjs"
   },
   "private": true,
   "license": "MIT",
   "engines": {
-    "node": "10.1.*",
-    "npm": "5.*"
+    "node": "15.*",
+    "npm": "7.*"
   },
   "repository": {
     "type": "git",
@@ -25,7 +25,6 @@
   },
   "devDependencies": {
     "bluebird": "^3.5.3",
-    "tap-summary": "^4.0.0",
-    "tape": "^4.9.1"
+    "tape": "^4.13.3"
   }
 }
